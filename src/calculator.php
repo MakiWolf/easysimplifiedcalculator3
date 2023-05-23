@@ -22,21 +22,21 @@ include ("calculation_class.php");
 $number1 = $_POST["number1"];
 $number2 = $_POST["number2"];
 $char = $_POST["char"];
-
+$calc = new calculation();
 
 switch ($char) {
 case "+":
-     echo "= " . add($number1,$number2) . "<br>";
+     echo "= " . $calc->add($number1,$number2) . "<br>";
      break;
 case "-":
-     echo "= " . sub($number1,$number2) . "<br>";
+     echo "= " . $calc->sub($number1,$number2) . "<br>";
      break;
 case "*":
-     echo "= " . mult($number1,$number2) . "<br>";
+     echo "= " . $calc->mult($number1,$number2) . "<br>";
      break;
 case ":":
 case "/":
-     echo "= " . div($number1,$number2) . "<br>";
+     echo "= " . $calc->div($number1,$number2) . "<br>";
      break;
 default:
      echo "unknown char!<br>";
