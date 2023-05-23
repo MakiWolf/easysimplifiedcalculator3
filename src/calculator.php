@@ -18,28 +18,10 @@
 
 
 <?php
-
+include ("calculation_class.php");
 $number1 = $_POST["number1"];
 $number2 = $_POST["number2"];
 $char = $_POST["char"];
-
-
-function add($number1, $number2) {
-    $result = $number1 + $number2;
-    return $result;
-}
-function sub($number1, $number2) {
-    $result = $number1 - $number2;
-    return $result;
-}
-function mult($number1, $number2) {
-    $result = $number1 * $number2;
-    return $result;
-}
-function div($number1, $number2) {
-    $result = $number1 / $number2;
-    return $result;
-}
 
 
 switch ($char) {
